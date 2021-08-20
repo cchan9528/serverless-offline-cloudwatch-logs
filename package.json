@@ -1,0 +1,25 @@
+{
+  "name": "serverless-offline-cloudwatch-logs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchan9528/serverless-offline-cloudwatch-logs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cchan9528/serverless-offline-cloudwatch-logs/issues"
+  },
+  "homepage": "https://github.com/cchan9528/serverless-offline-cloudwatch-logs#readme",
+  "devDependencies": {
+    "@types/node": "^16.6.1",
+    "@types/serverless": "^1.78.34",
+    "typescript": "^4.3.5"
+  }
+}
