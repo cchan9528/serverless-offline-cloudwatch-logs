@@ -41,13 +41,13 @@ export class ServerlessOfflineCloudwatchLogs {
     };
 
     this.hooks = {
-      "before:welcome:hello": this.beforeHello.bind(this),
-      "welcome:hello": this.onHello.bind(this),
-      "welcome:world": this.onWorld.bind(this),
-      "after:welcome:world": this.afterWorld.bind(this),
-      "before:welcome:nested:hello" : this.beforeHello.bind(this),
-      "welcome:nested:hello" : this.onWorld.bind(this),
-      "after:welcome:nested:hello" : this.beforeHello.bind(this)
+      // 'sls offline' Events
+      'before:offline:start': this.beforeHello.bind(this),
+      'after:offline:start': this.afterWorld.bind(this),
+
+      // 'sls offline start' Events
+      'before:offline:start:init': this.beforeHello.bind(this),
+      'after:offline:start:end': this.afterWorld.bind(this),
     };
   }
 
