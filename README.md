@@ -1,6 +1,12 @@
 # serverless-offline-cloudwatch-logs
 
-Serverless Framework plugin to emulate cloudwatch log events
+Serverless Framework plugin to emulate real-time cloudwatch log event subscriptions offline.
+
+Specifically, with this, users will be able to attach functions to (offline) (cloudwatch) log events
+- (offline) = locally, without ever hitting AWS/any cloud in any network
+- (cloudwatch) = since Lambda automatically publishes to cloudwatch
+
+Refer to https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptions.html
 
 ## Usage
 
